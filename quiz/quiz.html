@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz-style.css">
+    <link rel="icon" href="./images/logo-white.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="sticky">
+            <div class="row">
+                <img src="./images/logo.png"  alt="logo" class="logo">
+                <ul class="main-nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../gallery/gallery.html">Gallery</a></li>
+                    <li><a href="../store/store.html">Store</a></li>
+                    <li><a href="../quiz/quiz.html">Quiz</a></li>
+                    <li><a href="../site_map/site-map.html">Site Map</a></li>
+                    <li><a href="../student_details/Student.html">About US</a></li>
+                    <li><a href="../comment_form/comment-form.html">Comments</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="wrapper">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+    </div>
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+     <!--  information box-->
+     <div class="info_box">
+        <div class="info_title">
+            <span>Rules of this Quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each qustion.</div>
+            <div class="info">2. Once you select your answer, you can't reselect.</div>
+            <div class="info">3. Can't exit from the Quiz while you're playing.</div>
+            <div class="info">4. You can't select any option one time goes off.</div>
+            <div class="info">5. you'll get points on the basis of your correct answers. </div>
+ 
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="start">Start</button>
+        </div>
+    </div>
+
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Visit Sri Lanka  Quiz</div>
+            <div class="timer">
+                <div class="time_text">Time Left :</div>
+                <div class="timer_sec">15</div>
+            </div>
+
+        </header>
+        <div class="que">
+            <div class="que_text">
+            </div>
+            <div class="option_list">
+            </div>
+        </div>
+        <footer>
+            <div class="total_questions">
+            </div>
+            <button class="next_question">Next</button>
+        </footer>
+    </div> 
+    
+    <!-- Results box -->
+    <div class="results_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You have Completed the Quiz !</div>
+        <div class="score_text">
+        </div>
+        <div class="results_box_button">
+            <button class="restart">Replay</button>
+            <button class="quit_button">Quit</button>
+        </div>
+    </div>
+
+    
+    <div class="editor-page-btn">
+        <button class="editorBtn" onclick="window.location.href='../page_editor_pathum/page-editor.html';" >Page Editor</button>
+    </div>   
+
+    <div class ="footerSection">        
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../store/store.html">Store</a></li>
+                    <li><a href="../quiz/quiz.html">Quiz</a></li>
+                    <li><a href="../site_map/site-map.html">Site Map</a></li>
+                    <li><a href="../student_details/Student.html">About Us</a></li>
+                    <li><a href="../comment_form/comment-form.html">Comments</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="https://facebook.com/travelsl"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/travelsl"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/travelsl"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>       
+
+        </div> 
+        <div class="footer-logo">
+            <img src="./images/logo.png" alt="logo">
+        </div>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/questions.js"></script>
+</body>
+</html>

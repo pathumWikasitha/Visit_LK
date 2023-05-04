@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+@import url('fonts/AmstelvarAlpha-VF.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Tillana&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alkatra', cursive;
+} 
+
+body{
+    font-size: 15px;
+    color: rgba(202, 195, 211, 0.94);
+    margin: 30px;
+    background: linear-gradient(150deg, #000000 40%, #ca8132 60%);
+}
+h1{
+    font-size: 20px;
+}
+.details {
+    text-align: center;
+    float: left;
+    width: 59%;
+    padding: 2%;
+    
+} 
+#img {
+    float: left;
+    width: 35%;
+    height: 100%;
+    padding: 1%;
+    border: none;
+    
+}
+.task1, .task2, .Additional-page, .Main-page  {
+    text-align: center;
+    margin-top: 40px;
+    border: none;
+    line-height: 20px;
+}
+#name {
+    font-size: 60px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px #9311d8;
+}
+h2 {
+    font-size: 15px;
+    font-family: 'monospace';
+}
+.links:link {
+    color: rgb(25, 7, 34);
+}
+.links:visited{
+    color: rgb(245, 229, 220);
+}
+.links:hover{
+    color: rgb(255, 234, 0);
+}
+.links:active{
+    color: coral;
+}
+
+.fade-in-image {
+    animation: fadeIn 10s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+

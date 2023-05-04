@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="store-style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./images/logo-white.png" type="image/x-icon">
+
+    <title>Product Page</title>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div id="navbar">    
+
+        <ul>
+
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../store/store.html">Store</a></li>
+                <li><a href="../quiz/quiz.html">Quiz</a></li>
+                <li><a href="../site_map/site-map.html">Site Map</a></li>
+                <li><a href="../student_details/Student.html">About US</a></li>
+                <li><a href="../comment_form/comment-form.html">Comments</a></li>
+
+        </ul>
+
+         </div>
+
+
+    <div class="navbar-b">
+
+        <div class="dropdown">
+
+            <select name="">
+
+                <option value="1">Categories</option>
+
+                <option value="2">New</option>
+
+                <option value="3">Imported</option>
+
+                <option value="4">Local</option>
+
+            </select>
+
+           
+
+        </div>
+
+        <div class="search">
+
+                <input type="search" placeholder="Search...">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+
+         <div class="cart"><i class="fa-solid fa-chart-shopping"></i><p>0</p></div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+   
+
+   
+
+     <h1 align="center">SRI LANKAN PRODUCTS</h1>
+
+     <hr>
+
+     <table border="1" align="center">
+
+        <tr align="center">
+
+
+
+
+        <td>    <!--Product 01-->
+
+            <img class="image" src="./images/spoon.png" alt="spoon">
+
+            <p><b>Spoon</b></p>
+
+            <p>56 sold (4.0)</p>
+
+            Quantity:<input type="number" value="0" min="1" max="50" class="quantity" id="product1"></br></br>
+
+            <span class="price">Price - Rs.550</span></br></br>
+
+           <button onclick="buyProduct(1);" id="button1">Add To Cart</button></br>
+
+        </td>
+
+
+
+
+        <td>    <!--Product 02-->
+
+            <img class="image" src="./images/clay pottery.jfif" alt="clay pottery">
+
+            <p><b>clay pottery</b></p>
+
+            <p>19 sold (4.9)</p>
+
+            Quantity:<input type="number" value="0" min="1" max="10" class="quantity" id="product4"></br></br>
+
+            <span class="price">Price - Rs.400</span></br></br>
+
+            <button onclick="buyProduct(4);" id="button4">Add To Cart</button>
+
+        </td>
+
+       
+
+        <td>    <!--Product 03-->
+
+            <img class="image" src="./images/traditional drums.jfif" alt="traditional drums">
+
+            <p><b>traditional drums</b></p>
+
+            <p>20 sold (4.8)</p>
+
+            Quantity:<input type="number" value="0" min="1" max="10" class="quantity" id="product5"></br></br>
+
+            <span class="price">Price - <Rs class="30"></Rs>1040</span></br></br>
+
+            <button onclick="buyProduct(5);" id="button5">Add To Cart</button>
+
+        </td>
+
+    </table>
+
+
+
+
+    <table border="1" align="center">
+
+        <tr align="center">
+
+
+
+
+        <td>    <!--Product 04-->
+
+            <img class="image" src="./images/coir products.jfif" alt="coir Products">
+
+            <p><b>coir products</b></p>
+
+            <p>43 sold (4.4)</p>
+
+            Quantity:<input type="number" value="0" min="1" max="10" class="quantity" id="product6"></br></br>
+
+            <span class="price">Price - Rs.530</span></br></br>
+
+            <button onclick="buyProduct(6);" id="button6">Add To Cart</button>
+
+        </td>     </table>
+
+       
+
+     <br>
+
+     
+
+     <!--Payement area-->
+
+        <hr>
+
+        <h1 align="center">PAYMENT AREA</h1>
+
+        <hr>
+
+        <tr align="center">
+
+
+
+
+       
+
+        <div id="form-block">
+
+        <form name="sample" id="form-background">
+
+           
+
+           <h2>Personal information</h2>
+
+           
+
+           <label for="fName">First Name:</label>
+
+           <input type="text" id="fName" name="fName">
+
+
+
+
+           <label for="sName">Second Name:</label>
+
+           <input type="text" id="sName" name="sName">
+
+
+
+
+           <label for="email">E-mail:</label>
+
+           <input type="text" id="email" name="email" placeholder="abc@gmail.com">
+
+
+
+
+           <label for="contactNumber">Contatc Number:</label>
+
+           <input type="text" id="contactNumber" name="contactNumber">
+
+
+
+
+           <label for="address">Address:</label>
+
+           <input type="text" id="address" name="address">
+
+
+
+
+           <label for="city">City:</label>
+
+           <input type="text" id="city" name="city">
+
+
+
+
+           <label for="zip">Zip:</label>
+
+           <input type="text" id="zip" name="zip">
+
+           
+
+           <h2>Payment Detail</h2>
+
+    <form name="checkoutForm" id="#checkout-form">
+           
+
+           <p>Accepted Cards</p>
+
+           <div class = "cards">
+
+            <img src="./images/visa.jfif" width="50" height="40">
+
+            <img src="./images/master card.jfif " width="60" height="40">
+
+            <img src="./images/paypal.jfif" width="50" height="40">
+
+            </div>
+
+           
+
+            <label for="cardname">Card Holder Name:</label>
+
+            <input type="text" name="cardname" id="cardname">
+
+
+
+
+            <label for="cardnum">Card Number:</label>
+
+             <input type="text" name="cardnum" id="cardnum" placeholder="XXXX-XXXX-XXXX-XXXX">
+
+
+
+
+            <label for="exdate">Expiry Date:</label>
+
+            <input type="text" name="exdate" id="exdate" placeholder="10/24">
+
+             
+
+            <label for="cvv">cvv:</label>
+
+            <input type="text" name="cvv" id="cvv" placeholder="100"></br>
+
+        
+
+    
+
+   
+
+
+
+
+       <a href="#top" style="float: right; margin-right: 20px; font-size: 18px;">Back to top</a><br><br>
+
+       <input class="button button01" type="button" id="btnSubmit" value="Submit">
+
+     </form>
+
+       <script>
+
+       document.getElementById('btnSubmit').addEventListener('click',validation)
+
+       
+
+   
+
+           function validation(){
+
+               var firstName = document.forms["sample"]["fName"].value;
+
+               var secondName = document.forms["sample"]["sName"].value;
+
+               var email = document.forms["sample"]["email"].value;
+
+               var contactNumber = document.forms["sample"]["contactNumber"].value;
+
+               var address = document.forms["sample"]["address"].value;
+
+               var city = document.forms["sample"]["city"].value;
+
+               var zip = document.forms["sample"]["zip"].value;
+
+               var cardName = document.forms["sample"]["cardname"].value;
+
+               var cardNum = document.forms["sample"]["cardnum"].value;
+
+               var EXPdate = document.forms["sample"]["exdate"].value;
+
+               var CVV = document.forms["sample"]["cvv"].value;
+
+               if (firstName == "") {
+
+                   alert("You didnt enter your first name");
+
+               }
+
+               else if(secondName==""){
+
+                   alert("You didnt enter your second name");
+
+               }
+
+               else if(email==""){
+
+                   alert("You didnt enter your email");
+
+               }
+
+               else if(contactNumber==""){
+
+                   alert("You didnt enter your contact number");
+
+               }
+
+               else if(address==""){
+
+                   alert("You didnt enter your address");
+
+               }
+
+               else if(city==""){
+
+                   alert("You didnt enter your city");
+
+               }
+
+               else if(zip==""){
+
+                   alert("You didnt enter the zip number");
+
+               }
+
+               else if(cardName==""){
+
+                   alert("You didnt enter the Card Name");
+
+               }
+
+               else if(cardNum==""){
+
+                   alert("You didnt enter the Card number");
+
+               }
+
+               else if(EXPdate==""){
+
+                   alert("You didnt enter the exp Date");
+
+               }
+
+               else if(CVV==""){
+
+                   alert("You didnt enter the CVV");
+
+               }
+
+               
+
+           }
+
+           
+
+       </script>
+
+                   </br>
+
+       <hr>
+
+                   <center>
+
+    <div class="editor-page-btn">
+        <button class="editorBtn" onclick="window.location.href='../page_editor_hiruthi/editor.html';" >Page Editor</button>
+    </div>
+    
+       </center>
+<footer>
+       
+    <div class="row">
+        <div class="col span-1-of-2">
+            <ul class="footer-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./store/store.html">Store</a></li>
+                <li><a href="./quiz/quiz.html">Quiz</a></li>
+                <li><a href="./site_map/site-map.html">Site Map</a></li>
+                <li><a href="./student_details/Student.html">About Us</a></li>
+                <li><a href="./comment_form/comment-form.html">Comments</a></li>
+            </ul>
+        </div>
+
+       
+        <div class="col span-1-of-2">
+           
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>      
+
+    </div>
+    <div class="row">
+        <p>
+           Copyright &copy; 2023 by Sri Lanka Tourism board. All rights reserved.
+        </p>
+    </div>
+
+</footer>
+    <script src ="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="../gallery/images/logo-white.png">
+        <title>Gallery</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="gallerystyle.css">
+
+    </head>
+    <body>
+
+    <!-- header -->
+        <header>
+            <nav class="sticky">
+                <div class="row">
+                    <img src="../gallery/images/logo.png"  alt="logo" class="logo">
+                    <ul class="main-nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../gallery/gallery.html">Gallery</a></li>
+                    <li><a href="../store/store.html">Store</a></li>
+                    <li><a href="../quiz/quiz.html">Quiz</a></li>
+                    <li><a href="../site_map/site-map.html">Site Map</a></li>
+                    <li><a href="../student_details/Student.html">About Us</a></li>
+                    <li><a href="../comment_form/comment-form.html">Comments</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+            
+<!-- 1st section -->
+        <div class="cover-text">
+            <h1>WELCOME TO<br> SRI LANKA</h1>
+        </div> 
+        <button onclick="topFunction()" id="backtotopbtn" class="btntoup" >
+            <img src="../gallery/images/backToTop.jpg" alt="backtotopbutton">
+        </button>
+        <!-- selection bars -->
+        <div id="fcontainer">
+            <form>
+                <div id="selections">
+                    <div class="selectionbgcolor">
+                        <label for="colourbg">
+                            <span class="lables">Background Colour</span>
+                        </label>
+                        <select name="backgroundcolor" id="colourbg" onchange="bgcolor2(this.value)">
+                            <option value="black">Black</option>
+                            <option value="seagreen">Green</option>
+                            <option value="midnightblue">Blue</option>
+                            <option value="indigo">Purple</option>
+                        </select>
+                    </div>
+                    <div class="text_color_selection">
+                        <label for="colourtxt">
+                            <span class="lables">Text colour</span>
+                        </label>    
+                        <select name="textcolor" id="colourtxt" onchange="txtcolor(this.value)">
+                            <option value="white">White</option>
+                            <option value="green">Green</option>
+                            <option value="black">Black</option>
+                            <option value="blue">Blue</option>
+                        </select>               
+                    </div>
+                    <div class="font_size_selection">
+                        <label for="fontsizetxt">
+                            <span class="lables">Font size</span>
+                        </label>    
+                        <select name="fontsize" id="fontsizetxt" onchange="txtsize(this.value)">
+                            <option value="15">15 px</option>
+                            <option value="16">16 px</option>
+                            <option value="17">17 px</option>
+                            <option value="18">18 px</option>
+                        </select>                
+                    </div>
+
+                </div>
+            </form>
+        </div>
+            
+        <!-- gallery -->
+          <div class="imgcontainer">
+             <div class="container">
+                <div class="imgcrd">
+                    <div class="box">
+                        <div class="image">
+                            <img src="../gallery/images/colombo.jpg" alt="Colombo" class="cardimage" id="image1">
+                        </div>
+                    </div>
+                    <div class="description" >
+                        <h2>Colombo</h2> 
+                        <p>  Colombo is the largest city of Sri Lanka. It is the city which is economically most important to the country. 
+                            It has 642,163 people. It is on the west coast close to the capital city of Kotte.
+                        </p>
+                    </div>
+                </div>
+ 
+
+                <div class="imgcrd">
+                    <div class="box">
+                        <div class="image">
+                            <img src="../gallery/images/Ella.jpg" alt="Ella" class="cardimage" id="image2">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h2>Ella</h2>
+                        <p>
+                            Ella is a small town in the Badulla District of Uva Province, Sri Lanka. 
+                            It is approximately 200 kilometres east of Colombo and is situated at an elevation of 1,041 metres (3,415 ft) above sea level.
+                            The area has a rich bio-diversity. Ella is surrounded by hills covered with cloud forests and tea plantations. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="imgcrd"> 
+                    <div class="box">
+                        <div class="image">
+                            <img src="../gallery/images/Anuradhapura.jpg" alt="Anuradhapura" class="cardimage" id="image3">
+                        </div>
+                    </div>
+                <div class="description">
+                    <h2> Anuradhapura</h2>
+                    <p>
+                        Anuradhapura was the first capital of the island established in the 4th century BC. 
+                        It was the royal capital for 119 successive Singhalese Kings and lasted for about thousand five hundred years. 
+                        Many historic monuments and buildings still remain in the acres of this sacred land.</p>
+                </div>
+                </div>
+
+                <div class="imgcrd">
+                    <div class="box">
+                        <div class="image">
+                            <img src="../gallery/images/galle.jpg" alt="Galle" class="cardimage" id="image4">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h2>Galle</h2>
+                        <p>
+                            Galle is one of Sri Lanka’s most popular cities.
+                            Situated on the southwestern corner of the island, approximately 119 km south of Colombo, 
+                            this coastal paradise is one of the country’s most iconic, given its historical value.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="imgcrd">
+                    <div class="box">
+                        <div class="image">
+                            <img src="../gallery/images/kandy.jpg" alt="Kandy" class="cardimage" id="image5">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h2>Kandy</h2>
+                        <p>
+                            Kandy is a major city in Sri Lanka located in the Central Province. 
+                            It was the last capital of the ancient kings' era of Sri Lanka.
+                        </p>
+                    </div>    
+                </div>
+
+                <div class="imgcrd">
+                    <div class="box">
+                        <div class="image">
+                            <img src="../gallery/images/Yala_National_Park.jpg" alt="Yala National Park" class="cardimage" id="image6">
+                        </div>
+                    </div>
+                <div class="description">
+                    <h2>Yala National Park</h2>
+                    <p>
+                        Yala National Park is the most visited and second largest national park in Sri Lanka. 
+                        It is Located in the south eastern corner of Sri Lanka, and it is one of the best known wildlife parks. 
+                        This consists with light forests, scrubs, grasslands, tanks and lagoons.
+                    </p>
+                </div>
+                </div>
+
+                <div class="imgcrd">
+                    <div class="box">
+                        <div class="image">
+                            <img src="../gallery/images/sigiriya.jpg" alt="Sigiriya" class="cardimage" id="image7">
+                        </div>
+                    </div>
+                <div class="description">
+                    <h2>Sigiriya</h2>
+                    <p>
+                        Sigiriya or Sinhagiri is an ancient rock fortress located in the northern Matale District near the town of Dambulla in the Central Province, Sri Lanka. 
+                        It is a site of historical and archaeological significance that is dominated by a massive column of granite rock approximately 180 m (590 ft) high.
+                </div>
+                </div>  
+
+                <div class="imgcrd">
+                    <div class="box">
+                        <div class="image">
+                            <img src="../gallery/images/NuwaraEliya.jpg" alt="Nuwara Eliya"  class="cardimage" id="image8">
+                        </div>
+                    </div>
+                <div class="description">
+                    <h2>Nuwara Eliya</h2>
+                    <p>
+                        Dubbed "Little England" due to its cool climate and colonial-era bungalows, 
+                        Nuwara Eliya boasts a landscape far more dramatic than Britain's. 
+                        Mist-shrouded mountains and terraced tea plantations surround the former hill station, while world-class brews are abundant.
+                    </p>
+                </div>
+                </div>
+
+                <div class="imgcrd">
+                    <div class="box">
+                        <div class="image">
+                            <img src="../gallery/images/Polonnaruwa.jpg" alt="Polonnaruwa"  class="cardimage" id="image9">
+                        </div>
+                    </div>
+                <div class="description">
+                    <h2>Polonnaruwa</h2>
+                    <p>
+                        Polonnaruwa, is the main town of Polonnaruwa District in North Central Province, Sri Lanka. 
+                        The modern town of Polonnaruwa is also known as New Town, 
+                        and the other part of Polonnaruwa remains as the royal ancient city of the Kingdom of Polonnaruwa.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="editpage">
+            <a href="../page_editor_manduli/Manduli_Profile.html"><p >Page Editor</p></a>
+        </div>
+        <!-- footer  -->
+    <footer>
+        
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../gallery/gallery.html">Gallery</a></li>
+                    <li><a href="../store/store.html">Store</a></li>
+                    <li><a href="../quiz/quiz.html">Quiz</a></li>
+                    <li><a href="../site_map/site-map.html">Site Map</a></li>
+                    <li><a href="../student_details/Student.html">About Us</a></li>
+                    <li><a href="../comment_form/comment-form.html">Comments</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>       
+
+        </div> 
+        <div class="row">
+            <p>
+               Copyright &copy; 2023 by Sri Lanka Tourism board. All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="gallery.js"></script>
+    </body>
+</html>
